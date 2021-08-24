@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -18,5 +19,14 @@ class Controller extends BaseController
     public function showForm ()
     {
         return view('form');
+    }
+    public function store ()
+    {
+        request()->validate([
+            'name'=>'required|max:255',
+            'course'=>'required|max:255',
+            'email'=>'required|email|max:255'
+        ]);
+        return request()->all();
     }
 }

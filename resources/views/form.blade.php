@@ -11,7 +11,7 @@
 @extends('header')
 @extends('footer')
 
-<form method="POST" action="">
+<form method="POST" action="register">
     @csrf
 
     <label for="name">Name:</label>
@@ -25,5 +25,7 @@
 
     <input type="submit" id="submit" name="submit" value="Go">
 </form>
+
+
 </body>
 </html>

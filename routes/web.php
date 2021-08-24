@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/',[\App\Http\Controllers\Controller:: class, 'show']);
 Route::get('form',[\App\Http\Controllers\Controller:: class, 'showForm']);
-Route::post('form',[\App\Http\Controllers\Controller:: class, 'showForm']);
+Route::post('register',[\App\Http\Controllers\Controller:: class, 'store']);
 
 
 //route:: POST for form along with GET
