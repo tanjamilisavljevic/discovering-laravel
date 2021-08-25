@@ -20,15 +20,18 @@ class Controller extends BaseController
     {
         return view('form');
     }
+
+
     public function store ()
     {
-        request()->validate([
+        $attributes= request()->validate([
             'name'=>'required|max:255',
             'course'=>'required|max:255',
             'email'=>'required|email|max:255'
         ]);
+
+        User::create($attributes);
+
         return request()->only(['name', 'course', 'email']);
-
-
     }
 }
