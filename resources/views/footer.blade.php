@@ -1,4 +1,5 @@
-
 @section('footer')
-This is a footer!
+    <footer>
+        This is a footer!
+    </footer>
 @endsection

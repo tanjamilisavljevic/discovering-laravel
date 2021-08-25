@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
 
 @extends('layout')
 @extends('header')
 @extends('footer')
-
+@section('container')
 <form method="POST" action="register">
     @csrf
 
@@ -25,7 +17,4 @@
 
     <input type="submit" id="submit" name="submit" value="Go">
 </form>
-
-
-</body>
-</html>
+@endsection
