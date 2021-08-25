@@ -27,6 +27,8 @@ class Controller extends BaseController
             'course'=>'required|max:255',
             'email'=>'required|email|max:255'
         ]);
-        return request()->all();
+        return request()->only(['name', 'course', 'email']);
+
+
     }
 }
