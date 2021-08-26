@@ -1,6 +1,8 @@
 body{
     background-color: lightgoldenrodyellow;
     margin-top: 5em;
+    margin-right: 0;
+    max-height: 100%;
 }
 header{
     background-color: #f5c8b5;
@@ -8,6 +10,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    font-family: 'Ewert', cursive;
+    font-size: x-large;
+    border-bottom: solid grey 1px;
+    text-align: center;
+}
+h1{
+    padding: 0;
+    margin: 0;
 }
 footer{
     background-color: #f5c8b5;
@@ -16,12 +26,27 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
+    font-family: 'Stylish', sans-serif;
 }
 .wrapper{
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
+    margin-top: 2em;
 }
 .link{
     font-size: x-large;
+    font-family: 'Stylish', sans-serif;
+    text-decoration: none;
+}
+.cowWrapper{
+    display: grid;
+    justify-items: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.cow{
+    max-height: 40vh;
 }

@@ -2,10 +2,7 @@
 
 @section('header')
     <header>
-        <ul>
-            <li> First header item </li>
-            <li> Second header item</li>
-        </ul>
+       <h1> HOWDY PARTNER </h1>
     </header>
 @endsection
 
