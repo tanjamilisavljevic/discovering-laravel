@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -20,4 +21,11 @@ class User extends Authenticatable
 
 
     public $timestamps = false;
+
+
+//    public function scopeInCourseHi(Builder $query)
+//    {
+//        return $query->where('course', 'Hi');
+//    }
+
 }
