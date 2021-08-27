@@ -50,3 +50,39 @@ footer{
 .cow{
     max-height: 40vh;
 }
+.form{
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Stylish', sans-serif;
+    font-size: large;
+}
+.formWrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1rem;
+}
+.submitButton{
+    justify-self: center;
+    border-radius: 16px;
+    padding: 5px;
+    min-width: 8rem;
+    font-family: 'Stylish', sans-serif;
+}
+.submitButton:hover{
+    cursor: pointer;
+    background-color: #2d3748;
+    color: white;
+}
+.buttonWrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 2rem;
+}
+#homeLink{
+    justify-self: center;
+    margin-top: 3rem;
+}
+
+
+
