@@ -45,11 +45,11 @@ class Controller extends BaseController
     }
 
 
-//        public function user()
-//    {
-//        $specialUsers = User::inCourseHi()->with('course')->get();
-//        $specialCourses = Course::with('course')->get();
-//
-//        dd($specialUsers);
-//    }
+    public function specialUser()
+    {
+        $specialUsers = User::inCourseHi()->get();
+        $specialUsersNames = $specialUsers->pluck('name');
+
+        dd($specialUsersNames);
+    }
 }

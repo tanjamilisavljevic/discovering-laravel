@@ -23,9 +23,9 @@ class User extends Authenticatable
     public $timestamps = false;
 
 
-//    public function scopeInCourseHi(Builder $query)
-//    {
-//        return $query->where('course', 'Hi');
-//    }
+    public function scopeInCourseHi(Builder $query)
+    {
+        return $query->where('course', 'Hi');
+    }
 
 }

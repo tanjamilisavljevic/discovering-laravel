@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use PhpParser\Builder;
 
-class course extends Model
+class Course extends Model
 {
     use HasFactory;
 }

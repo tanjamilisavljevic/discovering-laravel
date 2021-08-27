@@ -20,8 +20,8 @@ Route::get('/', function () {
 Route::get('/',[\App\Http\Controllers\Controller:: class, 'show']);
 Route::get('form',[\App\Http\Controllers\Controller:: class, 'showForm']);
 Route::post('register',[\App\Http\Controllers\Controller:: class, 'store']);
-Route::get('database',[\App\Http\Controllers\Controller:: class, 'displayNames']);
-//Route::get('database',[\App\Http\Controllers\Controller:: class, 'user']);
+Route::get('users',[\App\Http\Controllers\Controller:: class, 'displayNames']);
+Route::get('selected-users',[\App\Http\Controllers\Controller:: class, 'specialUser']);
 
 
 
