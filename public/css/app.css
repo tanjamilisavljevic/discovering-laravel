@@ -76,7 +76,7 @@ footer{
 }
 .submitButton:active{
     cursor: pointer;
-    background-color: white;
+    background-color: #f5c8b5;
     color: #2d3748;
 }
 .buttonWrapper{
