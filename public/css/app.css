@@ -74,6 +74,11 @@ footer{
     background-color: #2d3748;
     color: white;
 }
+.submitButton:active{
+    cursor: pointer;
+    background-color: white;
+    color: #2d3748;
+}
 .buttonWrapper{
     display: grid;
     grid-template-columns: 100%;
